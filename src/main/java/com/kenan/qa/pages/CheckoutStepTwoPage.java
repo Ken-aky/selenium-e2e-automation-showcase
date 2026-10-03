@@ -17,6 +17,7 @@ public class CheckoutStepTwoPage extends BasePage {
 
     public CheckoutStepTwoPage(WebDriver driver) {
         super(driver);
+        wait.until(org.openqa.selenium.support.ui.ExpectedConditions.urlContains("checkout-step-two.html"));
         waitForVisibility(finishButton);
     }
 

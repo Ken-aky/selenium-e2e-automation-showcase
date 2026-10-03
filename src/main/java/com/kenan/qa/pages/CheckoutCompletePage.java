@@ -13,6 +13,7 @@ public class CheckoutCompletePage extends BasePage {
 
     public CheckoutCompletePage(WebDriver driver) {
         super(driver);
+        wait.until(org.openqa.selenium.support.ui.ExpectedConditions.urlContains("checkout-complete.html"));
         waitForVisibility(completeHeader);
     }
 
